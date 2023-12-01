@@ -158,7 +158,7 @@
             <div class="benefits--container--inner">
                 <div class="row d-flex justify-content-center align-items-start"  data-sticky-container>
                     <div class="col-12 col-xl-5">
-                        <div class="section--content sticky-js" data-sticky-for="1199">
+                        <div class="section--content sticky-js" data-sticky-for="1199" data-margin-top="100">
                             <div class="section--heading pe-0 pe-lg-3">
                                 <h2 class="section--heading__title">¡Recibe beneficios increíbles con Come Verde!</h2>
                             </div>
