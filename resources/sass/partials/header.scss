@@ -1,0 +1,52 @@
+.header{
+  border-bottom: 1px solid #EFEEE7;
+  background-color: $bodyBgColor;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: $headerHeight;
+  overflow: hidden;
+  .header--brand{
+    padding-left: 15px;
+    .brand-img{
+      a{
+        display: block;
+        width: 150px;
+        img{
+
+        }
+      }
+    }
+  }
+  .header--navbar {
+    .navbar {
+      list-style-type: none;
+      margin-bottom: 0;
+
+      li.item {
+        @include hk_d-iblock();
+
+        a {
+          text-decoration: none;
+          font-weight: $font-weight-semibold;
+
+          span {
+            padding: .75rem 1rem;
+          }
+
+          &:hover, &.active {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  ul.social-media{
+    padding-right: 1rem;
+    list-style-type: none;
+    margin-bottom: 0;
+    li{
+      @include hk_d-iblock();
+    }
+  }
+}

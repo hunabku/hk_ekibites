@@ -1,0 +1,399 @@
+.home{
+
+  //#region hero
+  .hero--section{
+    margin-top: 0;
+    padding-top: 0;
+    .section--image{
+      height: 300px;
+      @include hk_respond-to(xl){
+        height: 500px;
+      }
+    }
+  }
+  //#endregion hero
+
+  //#region howWorks
+  .howWorks--section{
+    .howWorks--box{
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 320px;
+      position: relative;
+      z-index: 2;
+      .howWorks--box__img{
+        margin: 0 auto;
+        max-width: 150px;
+        margin-bottom: 10px;
+      }
+      .howWorks--box__number{
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        background-color: $white;
+        border: 1px solid $primary;
+        margin: 0 auto 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+          line-height: 1;
+          color: $primary;
+          font-size: 1.25rem;
+          margin-top: 0px;
+        }
+      }
+      .howWorks--box__heading{
+        font-weight: $font-weight-semibold;
+        font-size: $h5-font-size;
+        margin-bottom: .5rem;
+      }
+    }
+    .howWorks--row .col:not(:last-child) .howWorks--box__number span:after{
+      height: 1px;
+      width: 95%;
+      position: absolute;
+      background-color: $primary;
+      top: 190px;
+      z-index: 0;
+      content: "";
+      margin-left: 13px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+      font-size: 50px!important;
+      font-weight: 100!important;
+    }
+    .owl-nav{
+      position: static;
+      width: 80px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      @include hk_respond-to(md){
+        top: 30%;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  //#endregion howWorks
+
+  //#region Banner
+  .banner--section{
+    .section--image{
+      height: 300px;
+      @include hk_respond-to(xl){
+        height: 400px;
+      }
+    }
+  }
+  //#endregion Banner
+
+  //#region Price List
+  .priceList--section{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    .priceList--icon--with__text{
+      .priceList--link{
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        color: $body-color;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }
+  //#endregion Price List
+
+  //#region Benefits
+  .benefits--section{
+    margin-top: 0;
+    padding-top: 0;
+    .benefits--container{
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .benefits--container--inner{
+      background-color: #fff;
+      margin: 0 auto;
+      border: 1px solid #2c2c2c;
+      border-radius: 10px;
+      padding: 30px 10px 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      align-items: flex-start;
+      @include hk_respond-to(sm){
+        padding-bottom: 20px;
+      }
+      @include hk_respond-to(md){
+        padding: 20px;
+      }
+      @include hk_respond-to(lg){
+        padding: 40px;
+      }
+    }
+    .section--content{
+      .section--heading .section--heading__title{
+        @include font-size( $h4-font-size );
+        @include hk_respond-to(lg){
+          @include font-size( $h1-font-size );
+        }
+      }
+    }
+    .benefits--wrapper{
+      .benefits--heading{
+        border-bottom: 0 solid $body-color;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        @include hk_respond-to(lg){
+          border-bottom: 1px solid $body-color;
+          padding-bottom: 5px;
+        }
+        .section--heading__title{
+          font-size: $h6-font-size;
+          font-weight: $font-weight-normal;
+          @include hk_respond-to(lg){
+            font-size: $h1-font-size;
+            font-weight: $font-weight-semibold;
+          }
+        }
+
+      }
+      .benefits--box {
+        .box__wrapper {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          .box__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            max-width: 350px;
+            width: 100%;
+            padding-right: 0px;
+            @include hk_respond-to(lg){
+              width: 50%;
+              padding-right: 10px;
+              margin-bottom: 30px;
+            }
+            img {
+              height: 30px;
+              margin-right: 15px;
+              @include hk_respond-to(lg){
+                height: 55px;
+              }
+            }
+            .box__item__content {
+              .box__heading {
+                font-weight: $font-weight-bold;
+                font-size: $font-size-base * .8;
+                margin-bottom: 0;
+                @include hk_respond-to(lg){
+                  font-size: $font-size-base * .9;
+                }
+              }
+              .box__paragraph {
+                margin-bottom: 0;
+                font-size: $font-size-base * .75;
+                font-weight: $font-weight-medium;
+                @include hk_respond-to(lg){
+                  font-size: $font-size-base * .85;
+                }
+              }
+            }
+          }
+        }
+        .box__fullwidth{
+          border: 1px solid $primary;
+          background-color: $white;
+          border-radius: 5px;
+          padding: 10px 0;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          @include hk_respond-to(lg) {
+            padding: 20px;
+          }
+          img{
+            height: 55px;
+            margin-right: 0;
+            padding: 0 30px;
+          }
+          .box__item{
+            max-width: 100%;
+            margin-bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            //flex-direction: column;
+            padding-right: 0;
+            @include hk_respond-to(lg) {
+              font-size: $font-size-base * .9;
+              align-items: center;
+              padding-right: 10px;
+            }
+          }
+          .box__item__content {
+            .box__heading {
+              font-weight: $font-weight-bold;
+              font-size: $font-size-base * .8;
+              margin-bottom: 0;
+              @include hk_respond-to(lg) {
+                font-size: $font-size-base * .9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //#endregion Benefits
+
+  //#region numberList
+  .numberList--section{
+    margin-bottom: 0;
+    background-color: #dae5d0;
+    @include hk_respond-to(lg) {
+      margin-bottom: 0px;
+    }
+    .section--content{
+      padding: 60px 20px 40px;
+      @include hk_respond-to(lg) {
+        padding: 80px 20px 80px;
+      }
+    }
+    .numberList--collect{
+      margin: 0 auto;
+      padding-top: 0;
+      @include hk_respond-to(lg){
+        max-width: 1000px;
+      }
+      .numberList--item{
+        padding: 15px 0;
+        width: 50%;
+        max-width: 100%;
+        text-align: center;
+        @include hk_respond-to(lg) {
+          text-align: start;
+          width: 25%;
+          max-width: 200px;
+          padding: 0 10px;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+        .numberList--item__heading{
+          margin-bottom: 5px;
+          @include font-size($h1-font-size * 1.25);
+          color: #1a8050;
+          font-weight: $font-weight-semibold;
+          line-height: 1;
+          letter-spacing: -2px;
+          @include hk_respond-to(lg) {
+            margin-bottom: 0;
+            @include font-size($h1-font-size);
+          }
+        }
+        .numberList--item__content{
+          margin-bottom: 0;
+          @include font-size($font-size-base * .75);
+          font-weight: $font-weight-normal;
+          @include hk_respond-to(lg) {
+            margin-bottom: 0;
+            @include font-size($font-size-base * .9);
+          }
+        }
+      }
+    }
+  }
+  .numberList--section__foot{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 6%;
+    vertical-align: middle;
+    overflow: hidden;
+    @include hk_respond-to(lg) {
+      padding-bottom: 6%;
+    }
+    svg{
+      display: inline-block;
+      position: absolute;
+      top: -50%;
+      left: 0;
+      z-index: 2;
+      height: auto;
+      width: 100%;
+    }
+  }
+  //#endregion numberList
+
+  //#region Faq
+  .faq--section {
+    .section--content {
+      margin: 0 auto;
+      padding: 50px 10px;
+      @include hk_respond-to(lg) {
+        padding: 50px 20px;
+      }
+    }
+    .accordion-item {
+      margin-bottom: 15px;
+      border-top-left-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-top-right-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-bottom-left-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-bottom-right-radius: calc( var(--bs-accordion-border-radius) * .5);
+    }
+
+    .accordion-item, .accordion-item:not(:first-of-type) {
+      border: var(--bs-accordion-border-width) solid $black;
+    }
+    .accordion-button{
+      @include font-size( $font-size-base * .85 );
+      font-weight: $font-weight-semibold;
+      @include hk_respond-to(lg){
+        @include font-size( $font-size-base );
+      }
+    }
+    .accordion-button, .accordion-item:first-of-type {
+      border-top-left-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-top-right-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-bottom-left-radius: calc( var(--bs-accordion-border-radius) * .5);
+      border-bottom-right-radius: calc( var(--bs-accordion-border-radius) * .5);
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: $body-color;
+      background-color: transparent;
+      box-shadow: inset 0 0 0 white;
+    }
+
+    .accordion-body {
+      padding-top: 0;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+  //#endregion Faq
+
+  //#region contact
+  .contact--section {
+    .section--content.section--content__border{
+      border-radius: 1rem;
+      background-color: $white;
+      margin-top: 20px;
+      padding: 20px 20px 10px 20px;
+    }
+    .frm-field {
+      position: relative;
+    }
+  }
+  //#endregion contact
+}

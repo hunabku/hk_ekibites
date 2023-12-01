@@ -1,0 +1,45 @@
+
+// Custom bootstrap
+@import 'variables.scss';
+// Bootstrap
+@import 'bootstrap.scss';
+
+
+//#region Grid breakpoints
+    //
+    // Define the minimum dimensions at which your layout will change,
+    // adapting to different screen sizes, for use in media queries.
+
+    $grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+    ) !default;
+    $container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+    );
+//#endregion Grid breakpoints
+
+//Hunabku
+@import 'hunabku';
+
+//Vendor
+    //->Parsley
+    @import "../_vendor/parsley";
+    @import "../_vendor/owl.carousel.min";
+
+//Partials
+@import 'partials/main';
+@import 'partials/header';
+@import 'partials/footer';
+
+//Pages
+@import 'pages/home';
+@import 'pages/privacy';

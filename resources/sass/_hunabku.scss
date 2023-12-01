@@ -1,0 +1,78 @@
+/*
+ * Description: Functions SCSS
+ * @author hunabku <apps@hunabku.mx>
+ */
+//@include hk_d-iblock
+@mixin hk_d-iblock() {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+//@include hk_clearfix()
+@mixin hk_clearfix(){
+	display: block;
+	clear: both;
+	content: "";
+}
+//@include hk_reset()
+@mixin hk_reset($type: ul) {
+	@if $type == ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+//@include hk_respond-to(lg)
+@mixin hk_respond-to($breakpoint) {
+	@if map-has-key($grid-breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+		@content;
+	}
+	}@else {
+		@warn "Unfortunately, no value could be retrieved from '#{$breakpoint}'. Please make sure it is defined in '$breakpoints' map.";
+	}
+}
+
+/**
+ * Generate Grid Debug
+ * [class*="col-"] { border: 1px solid yellow; }
+ */
+//#region Generate Grid Debug
+body.grid-debug{
+    [class*="col-"] { border: 1px solid blue; }
+    [class*="container"] { border: 1px solid green; }
+}
+.grid{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-image: url("../images/grid/grid-372_12c_24g_16line.png");
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 100%;
+    @include hk_respond-to(sm){
+        background-image: url("../images/grid/grid-540_12c_24g_16line.png");
+        background-size: initial;
+    }
+    @include hk_respond-to(md){
+        background-image: url("../images/grid/grid-720_12c_24g_16line.png");
+    }
+    @include hk_respond-to(lg){
+        background-image: url("../images/grid/grid-960_12c_24g_16line.png");
+    }
+    @include hk_respond-to(xl){
+        background-image: url("../images/grid/grid-1140_12c_24g_16line.png");
+    }
+    @include hk_respond-to(xxl){
+        background-image: url("../images/grid/grid-1320_12c_24g_16line.png");
+    }
+    .container{
+        height: 100%;
+    }
+}
+//#endregion

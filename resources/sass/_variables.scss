@@ -1,0 +1,76 @@
+
+// scss-docs-start color-variables [line:38]
+$blue:    #284D29 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #DE584B !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #56B058 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// Body [line:433]
+//
+// Settings for the `<body>` element.
+
+$body-text-align:           null !default;
+$body-color:                #101010 !default;
+
+// Typography [line:600]
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+// scss-docs-start border-radius-variables [line:546]
+$border-radius:               1.5rem !default;
+$border-radius-sm:            .25rem !default;
+$border-radius-lg:            .5rem !default;
+$border-radius-xl:            1rem !default;
+$border-radius-xxl:           2rem !default;
+
+// scss-docs-start headings-variables [line:652]
+/*$headings-margin-bottom:      $spacer * .5 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;*/
+//$headings-color:              $blue !default;
+// scss-docs-end headings-variables
+
+// Buttons + Forms [line:714]
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .75rem !default;
+
+// Buttons [line:813]
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-padding-x:               ($input-btn-padding-x * 4) !default;
+
+$btn-font-weight:             $font-weight-bold !default;
