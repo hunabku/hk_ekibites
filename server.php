@@ -54,7 +54,7 @@ define( 'IsMobile'  , $IsMobile );
     $lang_arr = [
         'home' => ['inicio',''],
         'privacy' => ['aviso-de-privacidad',''],
-        'contact_send' => ['contacto_send',''],
+        'contact_send' => ['contacto',''],
         '404' => ['404',''],
         '405' => '405',
     ];
@@ -65,13 +65,13 @@ define( 'IsMobile'  , $IsMobile );
  */
     $__WEBROUTES = [
         [ 'url' => '/', 'file' =>'home', 'method' => 'GET',
-            'slug' => 'portada', 'name' => 'inicio'
+            'slug' => 'portada', 'name' => 'Inicio'
         ],
         [ 'url' => '/aviso-de-privacidad', 'file' =>'privacy', 'method' => 'GET',
-            'slug' => 'aviso-de-privacidad', 'name' => 'privacy'
+            'slug' => 'aviso-de-privacidad', 'name' => 'Aviso'
         ],
         [ 'url' => '/contacto-enviar', 'file' =>'contact_send', 'method' => 'POST',
-            'slug' => 'contacto_send', 'name' => 'contacto_send'
+            'slug' => 'contacto-enviar', 'name' => 'Contacto'
         ],
     ];
 /**

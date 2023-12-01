@@ -365,7 +365,7 @@ $frm_msg = $frm_debug ? "Comentarios desde local host" : "";
                 <div class="col-11 col-lg-6 col-xl-6">
                     <div class="section--content section--content__border">
                         <form id="contact-form"
-                              class="frm-contacto wow fadeIn"
+                              class="frm-contacto"
                               method="POST"
                               action="#contacto"
 

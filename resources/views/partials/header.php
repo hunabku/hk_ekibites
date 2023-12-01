@@ -5,7 +5,7 @@
                 <div class="d-flex justify-content-start align-items-center"">
                     <div class="header--brand">
                         <div class="brand-img">
-                            <a href="<?= URL ?>#inicio" hk-ancla-from="inicio" alt="bienvenidos" target="_self" aria-label="bienvenidos a inicio">
+                            <a href="<?= URL ?>" hk-ancla-from="inicio" alt="bienvenidos" target="_self" aria-label="bienvenidos a inicio">
                                 <img src="<?=asset('brand/ekibites-negro@2x.png')?>" class="img--fit">
                             </a>
                         </div>
