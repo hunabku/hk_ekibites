@@ -115,7 +115,41 @@ if(!function_exists('whatsapp_link')) {
     }
 }
 
+if(!function_exists('hkImageTagWebP')) {
+    /**
+     * Crea tag picture compatibilidad para webp
+     */
+    function hkImageTagWebP($attr=null)
+    {
+
+        $class = $attr["class"]??'';
+        $src = $attr["src"]??'';
+        $webp= $attr["webp"]??'';
+        $width = $attr["width"]??'100%';
+        $height = $attr["height"]??'auto';
+        $alt = $attr["alt"]??'';
+        $extra_attr = $attr["extra-attr"]??'';
 
 
+        $lazy = strpos($class, "lazy") !== false ? true : false;
+        $img = "<picture>
+					<source
+						type='image/webp'
+						srcset='".asset($webp)."'
+					  />
+					<img 
+					    class='".$class." " .
+                        ($lazy?'data-':'') . "' src='".asset($src).
+                        "' alt='". strip_tags($alt) .
+					    "' width='". $width .
+					    "' $height='". $height .
+					    " ". $extra_attr .
+
+                        "'/>
+				</picture>";
+        return $img;
+
+    }
+}
 
 

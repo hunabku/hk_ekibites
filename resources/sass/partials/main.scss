@@ -1,12 +1,23 @@
 
+//googleFonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+//customFonts
+@font-face {
+  font-family: 'carton_sixregular';
+  src: url('../fonts/carton_six-webfont.woff2') format('woff2'),
+  url('../fonts/carton_six-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /**
 * General
 */
 
-$bodyBgColor: #faf9f4 !default;
+$bodyBgColor: #FFFFFF !default;
 $headerHeight: 90px;
+$fontFamilyHeading: "carton_sixregular";
 
 body, html {
     overflow-x: hidden;
@@ -49,34 +60,63 @@ body, html {
     object-fit: contain;
   }
 }
+.fnt-heading{
+  font-family: $fontFamilyHeading !important;
+}
+
+//#region section
 .section{
   position: relative;
   .section--inner{
     position: relative;
-    margin: 0 auto 60px;
-    padding: 0px;
-    @include hk_respond-to(xl){
+    margin: 0 auto;
+    padding: 60px 0;
+    &.section-margin{
       margin: 0 auto 60px;
-      padding: 20px;
-    }
-    @include hk_respond-to(xxl){
-      margin: 20px auto 60px;
+      @include hk_respond-to(xl){
+        margin: 0 auto 60px;
+        padding: 20px;
+      }
+      @include hk_respond-to(xxl){
+        margin: 20px auto 60px;
+      }
     }
   }
-  .container.section--container{
+  .container.section--container.section--bg-white{
     background-color: $white;
     border-radius: .75rem;
     padding: 20px 20px;
   }
   .section--heading{
     margin: 0 auto 30px;
+    font-family: $fontFamilyHeading;
   }
 }
+//#endregion section
+
+//#region backgrounds
+  .background--custom__1{
+    background-image: url("../images/home/bg-custom-1.jpg");
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .background--custom__2{
+    background-image: url("../images/home/bg-custom-2.jpg");
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .background--custom__3{
+    background-image: url("../images/home/bg-custom-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+//#endregion backgrounds
+
 #app{
     position: relative;
 }
 #content{
-  padding-top: 120px;
+  padding-top: 90px;
 }
 /**
  * Icons

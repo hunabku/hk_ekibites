@@ -1,6 +1,9 @@
 .header{
-  border-bottom: 1px solid #EFEEE7;
+  border-bottom: 2px solid #EFEEE7;
   background-color: $bodyBgColor;
+  background-image: url("../images/home/bg-custom-1.jpg");
+  background-position: center;
+  background-repeat: repeat;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -35,7 +38,7 @@
           }
 
           &:hover, &.active {
-            color: $secondary;
+            color: $success;
           }
         }
       }

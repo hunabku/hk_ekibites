@@ -10,6 +10,7 @@
   # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
   <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
     Header unset X-UA-Compatible
+    Header set Cache-Control "max-age=31536000"
   </FilesMatch>
 </IfModule>
 
@@ -19,6 +20,7 @@
     <FilesMatch "\.(gif|png|jpe?g|svg|svgz|ico|webp)$">
       SetEnvIf Origin ":" IS_CORS
       Header set Access-Control-Allow-Origin "*" env=IS_CORS
+      Header set Cache-Control "max-age=31536000"
     </FilesMatch>
   </IfModule>
 </IfModule>
@@ -26,6 +28,7 @@
 <IfModule mod_headers.c>
   <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
     Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "max-age=31536000"
   </FilesMatch>
 </IfModule>
 
@@ -118,7 +121,7 @@ AddType text/x-vcard                        vcf
 # Media: images, video, audio
   ExpiresByType image/gif                 "access plus 1 month"
   ExpiresByType image/png                 "access plus 1 month"
-  ExpiresByType image/jpg                 "access plus 1 month"
+  ExpiresByType image/jpg                 "access plus 1 year"
   ExpiresByType image/jpeg                "access plus 1 month"
   ExpiresByType video/ogg                 "access plus 1 month"
   ExpiresByType audio/ogg                 "access plus 1 month"

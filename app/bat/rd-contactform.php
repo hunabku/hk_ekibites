@@ -65,7 +65,7 @@ try {
 		if (isset($_POST['message'])&&$_POST['message']!='') {
 			$template = str_replace(
 				["<!-- #{LabelMessage} -->", "<!-- #{ValueMessage} -->"],
-				["Mensaje:", $_POST['message']],
+				["Pedido:", $_POST['message']],
 				$template);
 		}else{
 			die('MV004');

@@ -50,12 +50,20 @@ $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
 $border-radius-xxl:           2rem !default;
 
+// [line:633]
+/*$h1-font-size:                $font-size-base * 2.25 !default;
+$h2-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 1 !default;
+$h6-font-size:                $font-size-base !default;*/
+
 // scss-docs-start headings-variables [line:652]
 /*$headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;*/
+$headings-font-weight:        500 !default;*/
+$headings-line-height:        1.1 !default;
 //$headings-color:              $blue !default;
 // scss-docs-end headings-variables
 

@@ -15,16 +15,16 @@ return [
             'place-holder' => 'Nombre'
         ],
         'phone' => [
-            'label' =>'Telefono',
-            'place-holder' => 'Telefono'
+            'label' =>'Teléfono',
+            'place-holder' => 'Teléfono'
         ],
         'email' => [
             'label' =>'E-mail',
             'place-holder' => 'E-mail'
         ],
         'message' => [
-            'label' =>'Mensaje',
-            'place-holder' => 'Mensaje',
+            'label' =>'Pedido',
+            'place-holder' => 'Pedido',
             'required' => 'Requerido'
         ],
     ],
