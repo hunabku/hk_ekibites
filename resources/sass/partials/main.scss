@@ -116,7 +116,10 @@ body, html {
     position: relative;
 }
 #content{
-  padding-top: 90px;
+  padding-top: 30px;
+  @include hk_respond-to(xl){
+    padding-top: 90px;
+  }
 }
 /**
  * Icons

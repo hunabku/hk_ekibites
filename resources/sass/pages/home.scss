@@ -4,7 +4,13 @@
   .hero--section{
     margin-top: 0;
     .section--image{
-      height: 300px;
+      height: 400px;
+      @include hk_respond-to(md){
+        height: 500px;
+      }
+      @include hk_respond-to(lg){
+        height: 600px;
+      }
       @include hk_respond-to(xl){
         height: 550px;
       }
@@ -14,6 +20,16 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
+    }
+    .section--container{
+      position: relative;
+    }
+    .fritura{
+      position: absolute;
+      bottom: -230px;
+      right: -110px;
+      width: 380px;
+      height: 380px;
     }
   }
   //#endregion hero
@@ -80,18 +96,20 @@
 
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
       font-size: 50px!important;
-      font-weight: 100!important;
+      font-weight: 400!important;
+      color: $white;
     }
     .owl-nav{
-      position: static;
-      width: 80px;
+      position: absolute;
+      width: 95%;
+      top: 15%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       @include hk_respond-to(md){
         top: 30%;
         position: absolute;
-        width: 100%;
+        width: 95%;
       }
     }
   }
@@ -144,6 +162,9 @@
   //#region Benefits
   .benefits--section{
     margin-top: 0;
+    &.background--custom__3{
+      background-size: cover;
+    }
     .benefits--container{
       padding: 20px;
       margin-bottom: 20px;
@@ -203,7 +224,10 @@
           border: 2px solid $green;
           border-radius: 10px;
         }
-        padding: 30px 10px 30px 60px;
+        padding: 30px 10px 30px 30px;
+        @include hk_respond-to(lg){
+          padding: 30px 10px 30px 60px;
+        }
         .box__wrapper {
           width: 100%;
           display: flex;
@@ -211,7 +235,7 @@
           .box__item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             max-width: 350px;
             width: 100%;
             padding-right: 0px;
@@ -221,7 +245,7 @@
               margin-bottom: 10px;
             }
             img {
-              height: 30px;
+              height: 65px;
               margin-right: 15px;
               @include hk_respond-to(lg){
                 height: 65px;
@@ -230,7 +254,7 @@
             .box__item__content {
               .box__heading {
                 font-weight: $font-weight-bold;
-                font-size: $font-size-base * .8;
+                font-size: $font-size-base * .95;
                 margin-bottom: 0;
                 @include hk_respond-to(lg){
                   font-size: $font-size-base * .9;
@@ -294,7 +318,7 @@
               .box__item__content {
                 .box__heading {
                   font-weight: $font-weight-normal;
-                  font-size: $font-size-base * .8;
+                  font-size: $font-size-base * .9;
                   line-height: 1.25;
                   color: $body-color;
                   @include hk_respond-to(lg){

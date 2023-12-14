@@ -9,11 +9,11 @@
     list-style-type: none;
     margin-bottom: 0;
     li{
-      color: rgba($white,.5);
+      color: rgba($white,.75);
       a{
         margin: 0 .75rem;
         text-decoration: none;
-        color: rgba($white,.5);
+        color: rgba($white,.75);
         font-style: italic;
         font-size: calc( $font-size-base * .9 );
       }

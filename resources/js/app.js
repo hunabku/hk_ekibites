@@ -402,10 +402,10 @@ var Sticky = require('sticky-js');
         if ($(".owl-howWorks").length > 0 ){
             var owl = $('.owl-howWorks');
             owl.owlCarousel({
-                dots: true,
+                dots: false,
                 nav: true,
                 freeDrag: false,
-                autoplayTimeout: 2500,
+                lazyLoad: true,
                 margin: 20,
                 startPosition: 0,
                 autoplay: false,

@@ -11,6 +11,12 @@
 <section class="section">
 	<div class="section--inner hero--section">
 		<div class="container section--container">
+            <div class="fritura">
+                <img class="lazy img--fit"
+                     data-src="<?=asset('home/fritura@480x.png')?>"
+                     alt="Ekibites fritura" width="240" height="240"
+                >
+            </div>
 			<div class="row d-flex justify-content-center align-items-center">
 				<div class="col-11 col-md-8 col-xl-6 px-0 py-5 px-md-5 py-md-5">
 					<div class="section--content text-center pb-3 pb-xl-0">
@@ -21,7 +27,7 @@
 						<a class="btn btn-primary" href="<?=url('#realiza-tu-pedido')?>">¡Empieza a Ganar!</a>
                     </div>
 				</div>
-				<div class="col-12 col-xl-6">
+				<div class="col-12 col-md-10 col-xl-6">
 					<div class="section--image">
                         <?php /* echo hkImageTagWebP([
                             'src'=>'home/banner-principal@800x1067.jpg',
@@ -33,7 +39,13 @@
                             'extra-attr' => 'fetchpriority="high"',
                         ]); */
                         ?>
-						<img class="lazy img--fit" data-src="<?=asset('home/banner-principal@800x1067.jpg')?>" fetchpriority="high" alt="Ekibites productos" width="636" height="550">
+						<img class="lazy img--fit"
+                             data-src="<?=asset('home/banner-principal@800x1067.jpg')?>"
+                             data-srcset="<?=asset('home/banner-principal@480x.jpg')?> 480w,
+                                <?=asset('home/banner-principal@800x1067.jpg')?> 800w"
+                             data-sizes="auto"
+                             fetchpriority="high" alt="Ekibites productos" width="636" height="550"
+                        >
 					</div>
 				</div>
 			</div>
@@ -57,10 +69,10 @@
                                 <div class="row g-0 align-items-start howWorks--row">
                                     <?php
                                         $collect = [
-                                            ['img'=>'home/proceso-recibe-pedido@500x.png', 'number' => 1, 'heading'=> 'Realiza <br>tu Pedido', 'paragraph'=>'Haz tu pedido a través de este medio o envíanos un correo a ventas@ekibites.com'],
-                                            ['img'=>'home/proceso-realiza-pedido@500x.png', 'number' => 2, 'heading'=> 'Hoja de <br>Pre-Pedido', 'paragraph'=>'Recibirás una hoja de "pre-pedido" detallada para que tengas toda la información necesaria sobre tu compra.'],
-                                            ['img'=>'home/proceso-hoja-prepedido@500x.png', 'number' => 3, 'heading'=> 'Confirma <br>tu compra', 'paragraph'=>'Envíanos tu comprobante de pago y la dirección de envío.'],
-                                            ['img'=>'home/proceso-confirma-confirma@500x.png', 'number' => 4, 'heading'=> 'Recibe tu Pedido <br>y Factura', 'paragraph'=>'Te mandamos el pedido a tu dirección y si necesitas factura también la hacemos con tu CFDI.'],
+                                            ['img'=>'home/proceso-recibe-pedido@500x.png', 'img_sm'=>'home/proceso-recibe-pedido@500x_sm.png', 'number' => 1, 'heading'=> 'Realiza <br class="d-none d-lg-block">tu Pedido', 'paragraph'=>'Haz tu pedido a través de este medio o envíanos un correo a ventas@ekibites.com'],
+                                            ['img'=>'home/proceso-realiza-pedido@500x.png', 'img_sm'=>'home/proceso-realiza-pedido@500x_sm.png', 'number' => 2, 'heading'=> 'Hoja de <br class="d-none d-lg-block">Pre-Pedido', 'paragraph'=>'Recibirás una hoja de "pre-pedido" detallada para que tengas toda la información necesaria sobre tu compra.'],
+                                            ['img'=>'home/proceso-hoja-prepedido@500x.png', 'img_sm'=>'home/proceso-hoja-prepedido@500x_sm.png', 'number' => 3, 'heading'=> 'Confirma <br class="d-none d-lg-block">tu compra', 'paragraph'=>'Envíanos tu comprobante de pago y la dirección de envío.'],
+                                            ['img'=>'home/proceso-confirma-confirma@500x.png', 'img_sm'=>'home/proceso-confirma-confirma@500x_sm.png', 'number' => 4, 'heading'=> 'Recibe tu Pedido <br class="d-none d-lg-block">y Factura', 'paragraph'=>'Te mandamos el pedido a tu dirección y si necesitas factura también la hacemos con tu CFDI.'],
                                         ];
                                     ?>
                                     <?php foreach ($collect as $item){ ?>
@@ -87,10 +99,7 @@
                                         <div class="owl-wp text-center">
                                             <div class="howWorks--box text-center">
                                                 <div class="howWorks--box__img">
-                                                    <img class="lazy img--fit fit--contain" data-src="<?=asset($item['img'])?>" alt="<?=$item['paragraph']?>"/>
-                                                </div>
-                                                <div class="howWorks--box__number">
-                                                    <span><?=$item['number']?></span>
+                                                    <img class="img--fit fit--contain" src="<?=asset($item['img_sm'])?>" alt="<?=$item['paragraph']?>"/>
                                                 </div>
                                                 <div class="howWorks--box__heading">
                                                     <span><?=$item['heading']?></span>
@@ -184,11 +193,11 @@
                                     <div class="box__wrapper text-primary">
                                         <?php
                                         $collect = [
-                                            ['img'=>'home/beneficio-producto-vegano@500x.png', 'heading'=> 'Productos son <br>100% veganos', 'paragraph'=>''],
-                                            ['img'=>'home/beneficio-saludables@500x.png', 'heading'=> 'Deliciosamente <br>saludables', 'paragraph'=>''],
+                                            ['img'=>'home/beneficio-producto-vegano@500x.png', 'heading'=> 'Productos son <br class="d-none d-lg-block">100% veganos', 'paragraph'=>''],
+                                            ['img'=>'home/beneficio-saludables@500x.png', 'heading'=> 'Deliciosamente <br class="d-none d-lg-block">saludables', 'paragraph'=>''],
                                             ['img'=>'home/beneficio-libre-gluten@500x.png', 'heading'=> 'Libres de gluten', 'paragraph'=>''],
                                             ['img'=>'home/beneficio-precio-accesible@500x.png', 'heading'=> 'Precios accesibles', 'paragraph'=>''],
-                                            ['img'=>'home/beneficio-sin-azucar@500x.png', 'heading'=> 'Sin azúcar añadido <br>y sin lácteos', 'paragraph'=>''],
+                                            ['img'=>'home/beneficio-sin-azucar@500x.png', 'heading'=> 'Sin azúcar añadido <br class="d-none d-lg-block">y sin lácteos', 'paragraph'=>''],
                                         ];
                                         ?>
                                         <?php foreach ($collect as $item){ ?>
