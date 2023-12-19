@@ -230,8 +230,8 @@
                                         $collect = [
                                             ['img'=>'home/distribuidor-soporte.png', 'heading'=> 'Soporte Personalizado:', 'paragraph'=>'Tu éxito es nuestro objetivo. Te apoyamos y asesoramos en cada paso.'],
                                             ['img'=>'home/distribuidor-entregas.png', 'heading'=> 'Entregas a toda la República mexicana:', 'paragraph'=>'Ekibites está comprometido en ofrecer snacks que no solo cuidan de tu salud sino que también llegan directo a tu puerta.'],
-                                            ['img'=>'home/distribuidor-negocio.png', 'heading'=> 'Negocio Rentable:', 'paragraph'=>'Empieza a gozar de las excelentes ganancias que te esperan en este emocionante camino.'],
-                                            ['img'=>'home/distribuidor-presencia.png', 'heading'=> 'Presencia en distintos estados del país:', 'paragraph'=>'Ekibites tiene presencia en estados como Jalisco, Sinaloa, Chihuahua y CDMX.'],
+                                            ['img'=>'home/distribuidor-negocio.png', 'heading'=> 'Negocio Comprobado:', 'paragraph'=>'Empieza a gozar de las excelentes ganancias que te esperan en este emocionante camino.'],
+                                            ['img'=>'home/distribuidor-presencia.png', 'heading'=> 'Presencia en todo el país:', 'paragraph'=>'Ekibites tiene presencia en estados como Jalisco, Sinaloa, Chihuahua y CDMX.'],
                                         ];
                                         ?>
                                         <?php foreach ($collect as $item){ ?>
@@ -337,12 +337,12 @@
                         <div class="accordion mt-0 mt-lg-4" id="accordion-faq">
                             <?php
                             $collect = [
-                                ['heading'=> '¿Cuál es el margen de ganancia?', 'paragraph'=>'En Ekibites, creemos en recompensar tu esfuerzo. El margen de ganancia varía según la caja que elijas. ¡Aprovecha la oportunidad de ganar hasta un 50% en cada venta!'],
+                                ['heading'=> '¿Cuál es el margen de ganancia?', 'paragraph'=>'En Ekibites, creemos en recompensar tu esfuerzo. El margen de ganancia varía según la caja que elijas. ¡Aprovecha la oportunidad de ganar hasta un 75% en la ganancia!'],
                                 ['heading'=> '¿Cómo recibir la factura de mi pedido?', 'paragraph'=>'Facilitamos tu proceso de facturación. Solo envía un correo a ventas@ekibites.com, adjuntando tu constancia de situación fiscal reciente y tu comprobante de pago. En Ekibites, la transparencia es nuestro compromiso.'],
-                                ['heading'=> '¿Cuánto dura el producto?', 'paragraph'=>'Disfruta de la frescura en cada bocado. Nuestros snacks tienen una vida de anaquel de 3 meses.'],
+                                ['heading'=> '¿Cuánto dura el producto?', 'paragraph'=>'Disfruta de productos frescos y sin conservadores en cada bocado. Nuestros snacks tienen una vida de anaquel de 3 meses.'],
                                 ['heading'=> '¿Cuánto tengo que invertir?', 'paragraph'=>'No hay un mínimo de compra para tu pedido de distribuidor, elige los productos que desees vender. ¡Cada caja es completa y lista para impulsar tus ganancias! 📦'],
                                 ['heading'=> '¿Cuánto cuesta 1 caja y cuántas piezas contiene?', 'paragraph'=>'Nuestras cajas contienen de 25 a 40 piezas, dependiendo del producto. Los precios comienzan desde $700 por caja. 🤗 Además, al comprar 3 cajas, tu envío es gratis.'],
-                                ['heading'=> '¿Qué métodos de pago aceptan?', 'paragraph'=>'Aceptamos tarjetas de crédito y débito 💳, transferencias vía SPEI, o depósitos. En Ekibites, facilitamos cada transacción para que tu enfoque esté en hacer crecer tu emprendimiento.'],
+                                ['heading'=> '¿Qué métodos de pago aceptan?', 'paragraph'=>'Aceptamos transferencias vía SPEI o depósitos. En Ekibites, facilitamos cada transacción para que tu enfoque esté en hacer crecer tu emprendimiento.'],
                             ];
                             ?>
                             <?php foreach ($collect as $key => $item){ ?>
