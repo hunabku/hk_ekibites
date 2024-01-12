@@ -231,7 +231,7 @@
                                             ['img'=>'home/distribuidor-soporte.png', 'heading'=> 'Soporte Personalizado:', 'paragraph'=>'Tu éxito es nuestro objetivo. Te apoyamos y asesoramos en cada paso.'],
                                             ['img'=>'home/distribuidor-entregas.png', 'heading'=> 'Entregas a toda la República mexicana:', 'paragraph'=>'Ekibites está comprometido en ofrecer snacks que no solo cuidan de tu salud sino que también llegan directo a tu puerta.'],
                                             ['img'=>'home/distribuidor-negocio.png', 'heading'=> 'Negocio Comprobado:', 'paragraph'=>'Empieza a gozar de las excelentes ganancias que te esperan en este emocionante camino.'],
-                                            ['img'=>'home/distribuidor-presencia.png', 'heading'=> 'Presencia en todo el país:', 'paragraph'=>'Ekibites tiene presencia en estados como Jalisco, Sinaloa, Chihuahua y CDMX.'],
+                                            ['img'=>'home/distribuidor-presencia.png', 'heading'=> 'Presencia en todo el país:', 'paragraph'=>'EkiBite tiene presencia a lo largo de la República Mexicana.'],
                                         ];
                                         ?>
                                         <?php foreach ($collect as $item){ ?>
